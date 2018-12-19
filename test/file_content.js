@@ -71,9 +71,9 @@ function runTests() {
       checkString(path.resolve(dir, 'index.html'), string, done);
     });
 
-    it('"main.css" should contain a custom banner', function (done) {
+    it('"normalize.css" should contain a custom banner', function (done) {
       const string = `/*! HTML5 Boilerplate v${pkg.version} | ${pkg.license} License | ${pkg.homepage} */\n`;
-      checkString(path.resolve(dir, 'css/main.css'), string, done);
+      checkString(path.resolve(dir, 'css/normalize.css'), string, done);
     });
 
   });
